@@ -1,0 +1,27 @@
+{
+  "name": "honkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "honkit serve",
+    "build": "honkit build",
+    "lint": "textlint ./docs && markdownlint ./docs",
+    "fix": "textlint --fix ./docs && markdownlint -f ./docs",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "honkit": "^4.0.0",
+    "honkit-plugin-mermaid": "./honkit-plugin-mermaid-0.0.2.tgz",
+    "honkit-plugin-plantuml-server": "^1.0.4",
+    "markdownlint": "^0.26.2",
+    "markdownlint-cli": "^0.32.2",
+    "textlint": "^12.2.1",
+    "textlint-rule-preset-japanese": "^7.0.0",
+    "husky": "^8.0.0"
+  },
+  "dependencies": {}
+}

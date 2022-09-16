@@ -1,0 +1,16 @@
+{
+  "root": "./docs",
+  "title": "Book",
+  "description": "仕様書",
+  "author": "",
+  "language": "ja",
+  "plugins": [
+    "plantuml-server",
+    "mermaid"
+  ],
+  "pluginsConfig": {
+    "plantuml-server": {
+      "server": "http://www.plantuml.com/plantuml/"
+    }
+  }
+}
