@@ -4,11 +4,14 @@
 
 ```sh
 # インストール
-$ yarn install
+$ npm install
 
 # サーバ
-$ yarn serve
+$ npm run serve
 
 # ビルド
-$ yarn build
+$ npm run build
+
+# デプロイ
+$ npm run deploy
 ```
