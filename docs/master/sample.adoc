@@ -1,0 +1,108 @@
+= 素敵なテキストベース仕様書の例
+:source-highlighter: coderay
+ 
+== はじめに
+ 
+本書はAsciiDoc、PlantUML、mermaid などを使ったテキストベース仕様書の例を示すことを目的とする。
+ 
+ 
+== AsciiDocの記法(基本)
+ 
+AsciiDocの記法について記載する。なお、ここで紹介するのほんの一部の記法のみなので詳細は link:http://www.methods.co.nz/asciidoc/[公式ページ]を参照。
+ 
+=== セクション
+ 
+セクションは行頭を "=" で始める。"="の数でレベルを表現
+ 
+=== リスト
+ 
+* リストは * ではじめる
+** *の数でレベルを表現する
+*** level3
+ 
+=== 番号付きリスト
+ 
+. 番号付きリスト
+.. こちらも同じく .. の数でレベルを表現
+ 
+=== テキスト修飾
+ 
+下記のようなものが使える
+ 
+*太字*
+_斜体_
+(C)
+ 
+などなど多彩。link:http://powerman.name/doc/asciidoc#_level_1[AsciiDoc cheetsheet]を参照
+ 
+ 
+=== テーブル
+ 
+ 
+[.center,options="header,autowidth"]
+|=======================
+| 項番 | 内容
+|  1 | .centerで表示位置を中央に
+|  2 | header でヘッダつき
+|  3 | autowidth で幅を自動で調整してくれたり
+|  4 | 一つの +
+セル内に +
+複数行で +
+書くことも +
+できる
+|=======================
+ 
+ 
+=== ブロック
+ 
+.コードブロックの例
+[source,ruby]
+----
+require 'optparse'
+opt = OptionParser.new
+ 
+opt.on('-a') {|v| p v }
+opt.on('-b') {|v| p v }
+ 
+opt.parse!(ARGV)
+p ARGV
+ 
+ruby sample.rb -a foo bar -b baz
+# => true
+     true
+     ["foo", "bar", "baz"]
+----
+ 
+コードハイライトもされるので、見た目も良い
+ 
+ 
+<<<
+=== 改ページ
+<<< で改ページ。PDFを出力する時にたまに使う。
+ 
+=== PlantUML
+ 
+PlantUML を直接書ける
+ 
+.PlantUMLの例
+[plantuml]
+....
+class 会社員
+class 技術社員
+class 会社
+会社員 <|-- 技術社員
+会社 -> 会社員 : 給与を払う
+....
+ 
+=== mermaid
+ 
+mermaid も直接書ける
+ 
+.mermaidの例
+[mermaid]
+....
+graph LR;
+    AsciiDocテキスト -- asciidocotor-pdf --> PDF仕様書;
+    PlantUMLテキスト -- PlantUML --> png画像;
+    png画像 -- asciidoctor-pdf --> PDF仕様書;
+....

@@ -6,7 +6,7 @@
   "language": "ja",
   "plugins": [
     "plantuml-server",
-    "mermaid"
+    "mermaid-md-adoc"
   ],
   "pluginsConfig": {
     "plantuml-server": {

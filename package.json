@@ -17,7 +17,7 @@
   "devDependencies": {
     "gh-pages": "^4.0.0",
     "honkit": "^4.0.0",
-    "honkit-plugin-mermaid": "file:honkit-plugin-mermaid-0.0.3.tgz",
+    "honkit-plugin-mermaid-md-adoc": "file:honkit-plugin-mermaid-md-adoc-0.0.4.tgz",
     "honkit-plugin-plantuml-server": "^1.0.4",
     "husky": "^8.0.0",
     "markdownlint": "^0.26.2",
