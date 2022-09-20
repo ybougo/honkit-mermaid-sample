@@ -1,0 +1,510 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>asciidoc · Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 4.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter-1/" />
+    
+    
+    <link rel="prev" href="something.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Master
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="something.html">
+            
+                <a href="something.html">
+            
+                    
+                    なんかの機能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="sample.html">
+            
+                <a href="sample.html">
+            
+                    
+                    asciidoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter-1/">
+            
+                <a href="../chapter-1/">
+            
+                    
+                    chapter-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >asciidoc</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="素敵なテキストベース仕様書の例">素敵なテキストベース仕様書の例</h1>
+<div class="sect1">
+<h2 id="_はじめに">はじめに</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>本書はAsciiDoc、PlantUML、mermaid などを使ったテキストベース仕様書の例を示すことを目的とする。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_asciidocの記法基本">AsciiDocの記法(基本)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AsciiDocの記法について記載する。なお、ここで紹介するのほんの一部の記法のみなので詳細は <a href="http://www.methods.co.nz/asciidoc/" target="_blank">公式ページ</a>を参照。</p>
+</div>
+<div class="sect2">
+<h3 id="_セクション">セクション</h3>
+<div class="paragraph">
+<p>セクションは行頭を &quot;=&quot; で始める。&quot;=&quot;の数でレベルを表現</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_リスト">リスト</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>リストは * ではじめる</p>
+<div class="ulist">
+<ul>
+<li>
+<p>*の数でレベルを表現する</p>
+<div class="ulist">
+<ul>
+<li>
+<p>level3</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_番号付きリスト">番号付きリスト</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>番号付きリスト</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>こちらも同じく .. の数でレベルを表現</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_テキスト修飾">テキスト修飾</h3>
+<div class="paragraph">
+<p>下記のようなものが使える</p>
+</div>
+<div class="paragraph">
+<p><strong>太字</strong>
+<em>斜体</em>
+©</p>
+</div>
+<div class="paragraph">
+<p>などなど多彩。<a href="http://powerman.name/doc/asciidoc#_level_1" target="_blank">AsciiDoc cheetsheet</a>を参照</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_テーブル">テーブル</h3>
+<table class="tableblock frame-all grid-all fit-content center">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">項番</th>
+<th class="tableblock halign-left valign-top">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.centerで表示位置を中央に</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">header でヘッダつき</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">autowidth で幅を自動で調整してくれたり</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一つの<br>
+セル内に<br>
+複数行で<br>
+書くことも<br>
+できる</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_ブロック">ブロック</h3>
+<div class="listingblock">
+<div class="title">コードブロックの例</div>
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&apos;optparse&apos;</span>
+opt = OptionParser.new
+
+opt.on(<span class="hljs-string">&apos;-a&apos;</span>) {<span class="hljs-params">|v|</span> p v }
+opt.on(<span class="hljs-string">&apos;-b&apos;</span>) {<span class="hljs-params">|v|</span> p v }
+
+opt.parse!(ARGV)
+p ARGV
+
+ruby sample.rb -a foo bar -b baz
+<span class="hljs-comment"># =&gt; true</span>
+     <span class="hljs-literal">true</span>
+     [<span class="hljs-string">&quot;foo&quot;</span>, <span class="hljs-string">&quot;bar&quot;</span>, <span class="hljs-string">&quot;baz&quot;</span>]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>コードハイライトもされるので、見た目も良い</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="_改ページ">改ページ</h3>
+<div class="paragraph">
+<p>&lt;&lt;&lt; で改ページ。PDFを出力する時にたまに使う。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_plantuml">PlantUML</h3>
+<div class="paragraph">
+<p>PlantUML を直接書ける</p>
+</div>
+<div class="literalblock">
+<div class="title">PlantUMLの例</div>
+<div class="content">
+<pre>class 会社員
+class 技術社員
+class 会社
+会社員 &lt;|-- 技術社員
+会社 -&gt; 会社員 : 給与を払う</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mermaid">mermaid</h3>
+<div class="paragraph">
+<p>mermaid も直接書ける</p>
+</div>
+<div class="paragraph">
+<div class="title">mermaidの例</div>
+<p><div class="mermaid">
+graph LR;
+    AsciiDocテキスト -- asciidocotor-pdf --&gt; PDF仕様書;
+    PlantUMLテキスト -- PlantUML --&gt; png画像;
+    png画像 -- asciidoctor-pdf --&gt; PDF仕様書;
+</div></p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="something.html" class="navigation navigation-prev " aria-label="Previous page: なんかの機能">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter-1/" class="navigation navigation-next " aria-label="Next page: chapter-1">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"asciidoc","level":"1.2.2","depth":2,"next":{"title":"chapter-1","level":"1.3","depth":1,"path":"chapter-1/README.md","ref":"./chapter-1/README.md","articles":[]},"previous":{"title":"なんかの機能","level":"1.2.1","depth":2,"path":"master/something.md","ref":"./master/something.md","articles":[]},"dir":"ltr"},"config":{"plugins":["plantuml-server","mermaid-md-adoc"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"plantuml-server":{"server":"http://www.plantuml.com/plantuml/"},"mermaid-md-adoc":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Book","language":"ja","gitbook":"*","description":"仕様書"},"file":{"path":"master/sample.adoc","mtime":"2022-09-20T08:10:26.583Z","type":"asciidoc"},"gitbook":{"version":"4.0.0","time":"2022-09-20T09:37:31.857Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/honkit-plugin-mermaid-md-adoc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/honkit-plugin-mermaid-md-adoc/mermaid.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

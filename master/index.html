@@ -10,7 +10,6 @@
         
         
         
-  
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
@@ -45,7 +44,6 @@
     
         
     
-
 
         
     
@@ -123,6 +121,19 @@
             
                     
                     なんかの機能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="sample.html">
+            
+                <a href="sample.html">
+            
+                    
+                    asciidoc
             
                 </a>
             
@@ -338,13 +349,12 @@ requirementDiagram
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Master","level":"1.2","depth":1,"next":{"title":"なんかの機能","level":"1.2.1","depth":2,"path":"master/something.md","ref":"./master/something.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"articles":[{"title":"なんかの機能","level":"1.2.1","depth":2,"path":"master/something.md","ref":"./master/something.md","articles":[]}],"dir":"ltr"},"config":{"plugins":["plantuml-server","mermaid"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"plantuml-server":{"server":"http://www.plantuml.com/plantuml/"},"mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Book","language":"ja","gitbook":"*","description":"仕様書"},"file":{"path":"master/README.md","mtime":"2022-09-18T04:24:57.814Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-18T06:01:40.672Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Master","level":"1.2","depth":1,"next":{"title":"なんかの機能","level":"1.2.1","depth":2,"path":"master/something.md","ref":"./master/something.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"articles":[{"title":"なんかの機能","level":"1.2.1","depth":2,"path":"master/something.md","ref":"./master/something.md","articles":[]},{"title":"asciidoc","level":"1.2.2","depth":2,"path":"master/sample.adoc","ref":"./master/sample.adoc","articles":[]}],"dir":"ltr"},"config":{"plugins":["plantuml-server","mermaid-md-adoc"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"plantuml-server":{"server":"http://www.plantuml.com/plantuml/"},"mermaid-md-adoc":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Book","language":"ja","gitbook":"*","description":"仕様書"},"file":{"path":"master/README.md","mtime":"2022-09-16T06:34:21.170Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-20T09:37:31.857Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-  
     <noscript>
         <style>
             .honkit-cloak {
@@ -393,7 +403,11 @@ requirementDiagram
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/honkit-plugin-mermaid/book/plugin.js"></script>
+        <script src="../gitbook/honkit-plugin-mermaid-md-adoc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/honkit-plugin-mermaid-md-adoc/mermaid.min.js"></script>
         
     
         
@@ -416,9 +430,6 @@ requirementDiagram
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
-
-  <script src="../gitbook/honkit-plugin-mermaid/assets/mermaid.min.js"></script>
-  <script>mermaid.initialize({ startOnLoad: false });</script>
 
     </body>
 </html>
